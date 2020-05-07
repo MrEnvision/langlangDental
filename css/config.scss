@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// 项目颜色
+$color-main: #21b8c6;
+$color-second: #b45d01;
+$color-third: #f8f8f8;
+$color-forth: #e0e0e0;
+
+// 文字颜色
+$text-main: #010101;
+$text-gray: #a0a0a0;
+
+// 浏览器兼容
+@mixin webkit($type,$value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -ms-#{$type}: $value;
+  -o-#{$type}: $value;
+  #{$type}: $value;
+}
+
+// 文字显示行数
+@mixin textLines($num) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

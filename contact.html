@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <meta name="description" content="手把手撸码前端-HTML5_CSS3基础-学习项目">
+    <meta name="keywords" content="前端,html5,css3,学习">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+    <link rel="stylesheet" href="fonts/iconfont/iconfont.css" type="text/css">
+
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F0vE2RjanfE7Ye6ECyaFrFDKsgrNvBMZ"></script>
+
+</head>
+<body>
+<!--头部-->
+<script src="js/components/header.js"></script>
+
+<!--内容区域-->
+<div class="container">
+    <!--百度地图容器-->
+    <div class="baidu-map" id="map"></div>
+    <div class="info-wrap clearfix">
+        <div class="info">
+            <h4 class="content-title">朗朗医疗投资限公司</h4>
+            <span>集团总部招商热线：</span>
+            <a class="tel" href="tel:0755-56566573">0755-56566573</a>
+            <p><strong>地址</strong><br>深圳商山区（科技园）高新南一道3号富诚大厦三楼</p>
+            <p><strong>联系人：</strong>王经理</p>
+            <p><strong>邮箱</strong><br>wanghb@langlangdentalcom</p>
+        </div>
+        <div class="form">
+            <p>合赢未来 · 共创伟业 Win-win cooperation for bright future</p>
+            <form action="">
+                <div class="row-container gutter-15">
+                    <div class="row-item-4">
+                        <div class="input-item">
+                            <label><input type="text" placeholder="姓名" id="name"></label>
+                        </div>
+                    </div>
+                    <div class="row-item-4">
+                        <div class="input-item">
+                            <label><input type="text" placeholder="手机号" id="mobile"></label>
+                        </div>
+                    </div>
+                    <div class="row-item-4">
+                        <div class="input-item">
+                            <label><input type="email" placeholder="邮箱" id="email"></label>
+                        </div>
+                    </div>
+                    <div class="row-item-12">
+                        <div class="input-item">
+                            <label><textarea placeholder="内容" id="text"></textarea></label>
+                        </div>
+                    </div>
+                    <div class="row-item-4">
+                        <div class="input-item">
+                            <label><input type="text" placeholder="验证码" id="code"></label>
+                        </div>
+                    </div>
+                    <div class="row-item-4">
+                        <img src="images/message-code.png" alt="message-code">
+                    </div>
+
+                </div>
+                <button type="button" onclick="checkForm()">提交</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+<div class="job-banner">
+    <h4>加入我们</h4>
+    <p>尽揽天下英才 共展宏图伟业</p>
+    <span>opportunity seldom joins us</span>
+</div>
+<div class="container padding-bottom-50">
+    <div class="jobs-list" id="jobsList">
+        <section class="show">
+            <header>
+                <div class="mark"></div>
+                <span>工作地点：<strong>深圳</strong></span>
+                <span>工作岗位：<strong>财务</strong></span>
+            </header>
+            <div class="job-content">
+                岗位职责：<br>
+                负责公司日常财务的记录汇总，统计报表。淘宝天猫商城的日常发票开具，审核打单。有淘宝，京东，等等电商公司的日常工作经验优先，<br>
+                任职资格<br>
+                1，财务，会计专业，持有会计证；<br>
+                2，具有一年以上工作经验；<br>
+                3，熟悉操作财务软件，Excel，Word，ERP等办公软件；<br>
+                4，工作认真，态度端正。<br>
+                职能类别：会计 财务助理/文员<br>
+                <button type="button">立即申请</button>
+                <span>邮箱：<a href="mailto:liangy@langlangdental.com">liangy@langlangdental.com</a></span>
+                <span>手机：<a href="tel:186-6582-2617">186-6582-2617</a>（梁小姐）</span>
+                <span>座机：<a href="tel:0755-86566573">0755-86566573转6019</a></span>
+            </div>
+        </section>
+        <section>
+            <header>
+                <div class="mark"></div>
+                <span>工作地点：<strong>深圳</strong></span>
+                <span>工作岗位：<strong>财务</strong></span>
+            </header>
+            <div class="job-content">
+                岗位职责：<br>
+                负责公司日常财务的记录汇总，统计报表。淘宝天猫商城的日常发票开具，审核打单。有淘宝，京东，等等电商公司的日常工作经验优先，<br>
+                任职资格<br>
+                1，财务，会计专业，持有会计证；<br>
+                2，具有一年以上工作经验；<br>
+                3，熟悉操作财务软件，Excel，Word，ERP等办公软件；<br>
+                4，工作认真，态度端正。<br>
+                职能类别：会计 财务助理/文员<br>
+                <button type="button">立即申请</button>
+                <span>邮箱：<a href="mailto:liangy@langlangdental.com">liangy@langlangdental.com</a></span>
+                <span>手机：<a href="tel:186-6582-2617">186-6582-2617</a>（梁小姐）</span>
+                <span>座机：<a href="tel:0755-86566573">0755-86566573转6019</a></span>
+            </div>
+        </section>
+        <section>
+            <header>
+                <div class="mark"></div>
+                <span>工作地点：<strong>深圳</strong></span>
+                <span>工作岗位：<strong>财务</strong></span>
+            </header>
+            <div class="job-content">
+                岗位职责：<br>
+                负责公司日常财务的记录汇总，统计报表。淘宝天猫商城的日常发票开具，审核打单。有淘宝，京东，等等电商公司的日常工作经验优先，<br>
+                任职资格<br>
+                1，财务，会计专业，持有会计证；<br>
+                2，具有一年以上工作经验；<br>
+                3，熟悉操作财务软件，Excel，Word，ERP等办公软件；<br>
+                4，工作认真，态度端正。<br>
+                职能类别：会计 财务助理/文员<br>
+                <button type="button">立即申请</button>
+                <span>邮箱：<a href="mailto:liangy@langlangdental.com">liangy@langlangdental.com</a></span>
+                <span>手机：<a href="tel:186-6582-2617">186-6582-2617</a>（梁小姐）</span>
+                <span>座机：<a href="tel:0755-86566573">0755-86566573转6019</a></span>
+            </div>
+        </section>
+        <section>
+            <header>
+                <div class="mark"></div>
+                <span>工作地点：<strong>深圳</strong></span>
+                <span>工作岗位：<strong>财务</strong></span>
+            </header>
+            <div class="job-content">
+                岗位职责：<br>
+                负责公司日常财务的记录汇总，统计报表。淘宝天猫商城的日常发票开具，审核打单。有淘宝，京东，等等电商公司的日常工作经验优先，<br>
+                任职资格<br>
+                1，财务，会计专业，持有会计证；<br>
+                2，具有一年以上工作经验；<br>
+                3，熟悉操作财务软件，Excel，Word，ERP等办公软件；<br>
+                4，工作认真，态度端正。<br>
+                职能类别：会计 财务助理/文员<br>
+                <button type="button">立即申请</button>
+                <span>邮箱：<a href="mailto:liangy@langlangdental.com">liangy@langlangdental.com</a></span>
+                <span>手机：<a href="tel:186-6582-2617">186-6582-2617</a>（梁小姐）</span>
+                <span>座机：<a href="tel:0755-86566573">0755-86566573转6019</a></span>
+            </div>
+        </section>
+    </div>
+
+</div>
+<div class="pagination">
+    <a href="javascript:void(0)" title="">1</a>
+    <span>2</span>
+    <a href="javascript:void(0)" title="">3</a>
+    <a href="javascript:void(0)" title="">4</a>
+    <a href="javascript:void(0)" title="">5</a>
+    <a href="javascript:void(0)" title="">6</a>
+    <a href="javascript:void(0)" title="">7</a>
+    <a href="javascript:void(0)" title="">8</a>
+</div>
+
+<!--底部-->
+<script src="js/components/footer.js"></script>
+
+<script src="js/baiduMap.js"></script>
+<script>
+    // jobs-list内容显示隐藏
+    let jobsList = document.getElementById('jobsList');
+    jobsList.addEventListener('click', function (e) {
+        let target = e.target
+        if (target["className"] === 'mark') {
+            target.parentNode.parentNode["className"] = target.parentNode.parentNode["className"] === 'show' ? '' : 'show'
+        }
+
+    })
+
+    // 表单验证
+    function checkForm() {
+        let name = document.getElementById('name')
+        let mobile = document.getElementById('mobile')
+        let text = document.getElementById('text')
+        let email = document.getElementById('email')
+        let code = document.getElementById('code')
+        if (!name.value) {
+            alert('姓名不能为空')
+            return false // 不再进行后续操作
+        }
+        if (!text.value) {
+            alert('内容不能为空')
+            return false // 不再进行后续操作
+        }
+        if (!mobile.value.value) {
+            alert('手机号码不能为空')
+            return false // 不再进行后续操作
+        }
+        if (!(/^1[3456789]\d{9}$/.test(mobile.value))) {
+            alert("手机号码有误，请重填");
+            return false;
+        }
+        if (!email.value) {
+            alert('邮箱不能为空')
+            return false // 不再进行后续操作
+        }
+        // ...其他省略
+        // 后续为ajax操作
+
+    }
+</script>
+</body>
+</html>
